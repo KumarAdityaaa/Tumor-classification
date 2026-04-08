@@ -1,0 +1,35 @@
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  splits_dir: "data/splits"
+  classes: ["glioma_tumor", "meningioma_tumor", "no_tumor", "pituitary_tumor"]
+  img_size: 224
+  val_split: 0.15
+  test_split: 0.15
+  random_seed: 42
+
+augmentation:
+  horizontal_flip: true
+  rotation_range: 15
+  zoom_range: 0.1
+  brightness_range: [0.85, 1.15]
+  width_shift_range: 0.05
+  height_shift_range: 0.05
+
+training:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.001
+  early_stopping_patience: 10
+  lr_reduce_patience: 5
+  lr_reduce_factor: 0.5
+  class_weighting: "balanced"
+
+models:
+  custom_cnn:
+    dropout_rate: 0.4
+    dense_units: 512
+  pretrained:
+    fine_tune_layers: 20
+    fine_tune_lr: 0.00001
+    warmup_epochs: 5
