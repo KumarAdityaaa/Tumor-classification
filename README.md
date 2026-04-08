@@ -3,7 +3,10 @@
 Research code for multi-class brain tumor classification from MRI images, comparing a custom CNN with pretrained backbones. The repository focuses on reproducible evaluation across four classes: glioma, meningioma, pituitary tumor, and no tumor.
 
 ## 📊 Dataset
-(The dataset is currently not availabe will upload soon, contact for details)
+
+> Note: The dataset is not uploaded to this GitHub repository and is currently unavailable here.
+> Data must be provided separately and placed in `data/raw/`.
+
 The dataset consists of MRI brain images categorized into four classes:
 - **Glioma Tumor** (glioma_tumor)
 - **Meningioma Tumor** (meningioma_tumor)
@@ -109,6 +112,8 @@ All hyperparameters are defined in `config.yaml`:
 
 ## 📈 Results
 
+> Note: Result files and generated artifacts are not included in this GitHub repository for repository size and data privacy reasons.
+
 ### Model Performance Comparison
 
 | Model | Accuracy | Precision | Recall | F1 (Macro) |
@@ -154,4 +159,4 @@ This repository is provided for research and publication purposes. Please refer 
 ## 📌 Research note
 
 Intended for academic reference and reproducible evaluation. Please cite the associated research work if this code is used in a publication.</content>
-<parameter name="filePath">d:\Research\brain_tumor_classification\README.md
+<parameter name="filePath">
