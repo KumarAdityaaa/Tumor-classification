@@ -39,14 +39,6 @@ brain_tumor_classification/
     └── dataset.py           # Data loading and preprocessing utilities
 ```
 
-## 🚀 Installation
-
-1. Download or clone the repository to your local environment.
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-3. Place your MRI dataset in the `data/raw/` directory with subfolders for each class.
 
 ## 📋 Usage
 
